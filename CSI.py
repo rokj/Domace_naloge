@@ -1,31 +1,66 @@
 # -*- coding: utf-8 -*-
 
-moski = "TGCAGGAACTTC"
-zenska = "TGAAGGACCTTC"
-belec = "AAAACCTCA"
-crnec = "CGACTACAG"
-azijec = "CGCGGGCCG"
-crni_lasje = "CCAGCAATCGC"
-rjavi_lasje = "GCCAGTGCCG"
-oranzni_lasje = "TTAGCTATCGC"
-modre_oci = "TTGTGGTGGC"
-zelene_oci = "GGGAGGTGGC"
-rjave_oci = "AAGTAGTGAC"
-kvadraten_obraz = "GCCACGC"
-okrogel_obraz = "ACCACAA"
-ovalen_obraz = "AGGCCTCA"
+ziga = ["TGCAGGAACTTC", "AAAACCTCA", "TTAGCTATCGC", "rjave_oci", "ACCACAA"]
 
-ziga = moski + belec + oranzni_lasje + rjave_oci + okrogel_obraz
+matej = ["TGCAGGAACTTC", "AAAACCTCA", "CCAGCAATCGC", "TTGTGGTGGC", "AGGCCTCA"]
 
-matej = moski + belec + crni_lasje + modre_oci + ovalen_obraz
-
-miha = moski + belec + rjavi_lasje + zelene_oci + kvadraten_obraz
+miha = ["TGCAGGAACTTC", "AAAACCTCA", "GCCAGTGCCG", "GGGAGGTGGC", "GCCACGC"]
 
 dna = open("dna.txt","r").read()
 
-print dna.find(ziga)
-print dna.find(matej)
-print dna.find(miha)
+if dna.find(ziga[0])>=0:
+    print "Ziga DNA found"
+else:
+    print "Ziga DNA not found"
+if dna.find(ziga[1])>=0:
+    print "Ziga DNA found"
+if dna.find(ziga[2])>=0:
+    print "Ziga DNA found"
+else:
+    print "Ziga DNA not found"
+if dna.find(ziga[3])>=0:
+    print "Ziga DNA found"
+else:
+    print "Ziga DNA not found"
+if dna.find(ziga[4])>=0:
+    print "Ziga DNA found"
+else:
+    print "Ziga DNA not found"
 
+if dna.find(matej[0])>=0:
+    print "Matej DNA found"
+else:
+    print "Matej DNA not found"
+if dna.find(matej[1])>=0:
+    print "Matej DNA found"
+if dna.find(matej[2])>=0:
+    print "Matej DNA found"
+else:
+    print "Matej DNA not found"
+if dna.find(matej[3])>=0:
+    print "Matej DNA found"
+else:
+    print "Matej DNA not found"
+if dna.find(matej[4])>=0:
+    print "Matej DNA found"
+else:
+    print "Matej DNA not found"
 
-
+if dna.find(miha[0])>=0:
+    print "Miha DNA found"
+else:
+    print "Miha DNA not found"
+if dna.find(miha[1])>=0:
+    print "Miha DNA found"
+if dna.find(miha[2])>=0:
+    print "Miha DNA found"
+else:
+    print "Miha DNA not found"
+if dna.find(miha[3])>=0:
+    print "Miha DNA found"
+else:
+    print "Miha DNA not found"
+if dna.find(miha[4])>=0:
+    print "Miha DNA found"
+else:
+    print "Miha DNA not found"
